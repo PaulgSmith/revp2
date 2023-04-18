@@ -15,5 +15,8 @@ COPY . .
 #5 Install gems in the image
 RUN bundle install
 
+CMD bundle exec rake db:migrate
+
+CMD bundle exec rake db:seed
 #6 Command that will be executed when you run the image
 CMD bundle exec rails s -p 3000 -b '0.0.0.0'
