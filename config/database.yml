@@ -26,7 +26,7 @@ development:
   database: postgres
   username: postgres
   password: abcde12345
-  host: kyle-paul-p2.ccgra2mrurtt.us-west-2.rds.amazonaws.com
+  host: database-1.ccgra2mrurtt.us-west-2.rds.amazonaws.com
   port: 5432
 
   # The specified database role being used to connect to postgres.
@@ -90,5 +90,5 @@ production:
   database: postgres
   username: postgres
   password: abcde12345
-  host: kyle-paul-p2.ccgra2mrurtt.us-west-2.rds.amazonaws.com
+  host: database-1.ccgra2mrurtt.us-west-2.rds.amazonaws.com
   port: 5432
