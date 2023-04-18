@@ -25,7 +25,9 @@ development:
   <<: *default
   database: postgres
   username: postgres
-  password: 123
+  password: abcde12345
+  host: kyle-paul-p2.ccgra2mrurtt.us-west-2.rds.amazonaws.com
+  port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -85,6 +87,8 @@ test:
 #
 production:
   <<: *default
-  database: Project1_production
-  username: Project1
-  password: <%= ENV["PROJECT1_DATABASE_PASSWORD"] %>
+  database: postgres
+  username: postgres
+  password: abcde12345
+  host: kyle-paul-p2.ccgra2mrurtt.us-west-2.rds.amazonaws.com
+  port: 5432
