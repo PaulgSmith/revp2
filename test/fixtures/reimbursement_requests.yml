@@ -1,0 +1,7 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+office_chair:
+  personnel: employee1
+  request_amount: 432.24
+  subject: home office chair
+  request: Hello, I would like my office chair to be reimbursed
