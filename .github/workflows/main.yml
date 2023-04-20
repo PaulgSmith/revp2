@@ -22,7 +22,19 @@ jobs:
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - 
-        name: Build and push
+        name: Build
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/paul-kyle-p2
+      -
+        name: Run tests
+        run: |
+          docker run -it --rm ${{ secrets.DOCKERHUB_USERNAME }}/paul-kyle-p2 bundle exec rails test
+      -
+        name: Push
         uses: docker/build-push-action@v4
         with:
           context: .
