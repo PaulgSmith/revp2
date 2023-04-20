@@ -50,3 +50,5 @@ end
 
 
 gem "jwt", "~> 2.7"
+
+gem "sqlite3", "~> 1.6"

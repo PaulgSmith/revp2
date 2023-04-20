@@ -157,6 +157,8 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
+    sqlite3 (1.6.2-x64-mingw-ucrt)
+    sqlite3 (1.6.2-x86_64-linux)
     thor (1.2.1)
     timeout (0.3.2)
     tzinfo (2.0.6)
@@ -181,7 +183,11 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.4, >= 7.0.4.3)
   simplecov
+  sqlite3 (~> 1.6)
   tzinfo-data
+
+RUBY VERSION
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.4.8
