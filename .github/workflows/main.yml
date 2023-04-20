@@ -32,7 +32,7 @@ jobs:
       -
         name: Run tests
         run: |
-          docker run -it --rm ${{ secrets.DOCKERHUB_USERNAME }}/paul-kyle-p2 bundle exec rails test
+          docker run -it --rm ${{ secrets.DOCKERHUB_USERNAME }}/paul-kyle-p2 bash -c "bundle exec rails test"
       -
         name: Push
         uses: docker/build-push-action@v4
