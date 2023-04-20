@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          gem install bundler
+          sudo gem install bundler
           bundle install
       - name: Run tests
         run: |
