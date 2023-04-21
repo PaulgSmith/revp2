@@ -39,6 +39,13 @@ jobs:
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake
+        
+      - name: Upload Code Coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage
+          path: coverage/  
+      
       -
         name: Checkout
         uses: actions/checkout@v3
