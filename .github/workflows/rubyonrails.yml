@@ -77,4 +77,4 @@ jobs:
           if ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@ec2-54-71-28-118.us-west-2.compute.amazonaws.com 'docker container ls --filter name=ruby --format "{{.Names}}"' | grep -q ruby; then
             ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@ec2-54-71-28-118.us-west-2.compute.amazonaws.com 'docker stop ruby && docker rm ruby'
           fi
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@ec2-54-71-28-118.us-west-2.compute.amazonaws.com 'docker run -d --name ruby --pull always -p 3000:3000 -p 5432:5432 paul-kyle-p2'
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@ec2-54-71-28-118.us-west-2.compute.amazonaws.com 'docker run -d --name ruby --pull always -p 3000:3000 -p 5432:5432 paulgsmith/paul-kyle-p2'
