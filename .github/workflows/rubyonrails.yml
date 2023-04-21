@@ -45,8 +45,6 @@ jobs:
         with:
           name: code-coverage
           path: coverage/  
-      - name: Store Code Coverage in repository
-        uses: actions/download-artifact@v2
           
       -
         name: Checkout
